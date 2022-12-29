@@ -12,7 +12,6 @@ typedef struct ts_entry_t {
 // the capacity of the array, and the size (number of entries stored)
 typedef struct ts_hashmap_t {
    ts_entry_t **table;
-   pthread_mutex_t *locktable;
    int capacity;
    int size;
 } ts_hashmap_t;
